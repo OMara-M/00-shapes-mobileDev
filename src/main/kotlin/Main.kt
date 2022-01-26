@@ -42,7 +42,6 @@ fun main(args: Array<String>){
     myTriangle.printDimensions()
     println(String.format("Area: %.1f", myTriangle.getArea()))
 
-
     println("\n" + myEquilateralTriangle.name)
     myEquilateralTriangle.printDimensions()
     println(String.format("Area: %.1f", myEquilateralTriangle.getArea()))
