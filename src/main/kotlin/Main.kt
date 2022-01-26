@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun main(){
+fun main() {
     val mySquare = Square("Square")
     val myCircle = Circle("Circle")
     val myTriangle = Triangle("Triangle")
@@ -9,25 +9,25 @@ fun main(){
     val scanner = Scanner(System.`in`)
 
     print("Set Square.Length: ")
-    val l:Int = scanner.nextInt()
+    val l: Int = scanner.nextInt()
     print("Set Square.Height: ")
     val h = scanner.nextInt()
     mySquare.setDimensions(l.toDouble(), h.toDouble())
 
     print("Set Circle.Radius: ")
-    val r:Int = scanner.nextInt()
+    val r: Int = scanner.nextInt()
     myCircle.setDimensions(r.toDouble())
 
     print("Set Triangle.sideA: ")
-    val sideA:Int = scanner.nextInt()
+    val sideA: Int = scanner.nextInt()
     print("Set Triangle.sideB: ")
-    val sideB:Int = scanner.nextInt()
+    val sideB: Int = scanner.nextInt()
     print("Set Triangle.sideC: ")
-    val sideC:Int = scanner.nextInt()
+    val sideC: Int = scanner.nextInt()
     myTriangle.setDimensions(sideA.toDouble(), sideB.toDouble(), sideC.toDouble())
 
     print("Set EquilateralTriangle.side: ")
-    val side:Int = scanner.nextInt()
+    val side: Int = scanner.nextInt()
     myEquilateralTriangle.setDimensions(side.toDouble())
 
     println("\n" + mySquare.name)
