@@ -32,17 +32,18 @@ fun main(args: Array<String>){
 
     println("\n" + mySquare.name)
     mySquare.printDimensions()
-    println("Area: " + mySquare.getArea())
+    println(String.format("Area: %.1f", mySquare.getArea()))
 
     println("\n" + myCircle.name)
     myCircle.printDimensions()
-    println("Area: " + myCircle.getArea())
+    println(String.format("Area: %.1f", myCircle.getArea()))
 
     println("\n" + myTriangle.name)
     myTriangle.printDimensions()
-    println("Area: " + myTriangle.getArea())
+    println(String.format("Area: %.1f", myTriangle.getArea()))
+
 
     println("\n" + myEquilateralTriangle.name)
     myEquilateralTriangle.printDimensions()
-    println("Area: " + myEquilateralTriangle.getArea())
+    println(String.format("Area: %.1f", myEquilateralTriangle.getArea()))
 }
