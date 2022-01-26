@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun main(args: Array<String>){
+fun main(){
     val mySquare = Square("Square")
     val myCircle = Circle("Circle")
     val myTriangle = Triangle("Triangle")
