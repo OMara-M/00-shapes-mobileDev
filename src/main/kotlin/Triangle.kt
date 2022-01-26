@@ -14,7 +14,7 @@ open class Triangle (_name: String): Shape (_name) {
     override fun getArea(): Double {
         val perimeter = sideA + sideB + sideC
         val s = perimeter/2
-        return sqrt(s * (s-sideA) * (s-sideB) * (s-sideC))
+        return sqrt((s * (s-sideA) * (s-sideB) * (s-sideC)))
     }
 
 

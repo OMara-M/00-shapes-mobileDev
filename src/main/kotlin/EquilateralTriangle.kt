@@ -8,9 +8,9 @@ class EquilateralTriangle (_name: String):  Triangle (_name){
     }
 
     override fun getArea(): Double {
-        val perimeter = side * side * side
+        val perimeter = side * 3
         val s = perimeter/2
-        return sqrt(s * (s-side) * (s-side) * (s-side))
+        return sqrt((s * (s-side) * (s-side) * (s-side)))
     }
 
 

@@ -13,7 +13,36 @@ fun main(args: Array<String>){
     print("Set Square.Height: ")
     var h = scanner.nextInt()
     mySquare.setDimensions(l.toDouble(), h.toDouble())
-    println(mySquare.name)
+
+    print("Set Circle.Radius: ")
+    var r:Int = scanner.nextInt()
+    myCircle.setDimensions(r.toDouble())
+
+    print("Set Triangle.sideA: ")
+    var sideA:Int = scanner.nextInt()
+    print("Set Triangle.sideB: ")
+    var sideB:Int = scanner.nextInt()
+    print("Set Triangle.sideC: ")
+    var sideC:Int = scanner.nextInt()
+    myTriangle.setDimensions(sideA.toDouble(), sideB.toDouble(), sideC.toDouble())
+
+    print("Set EquilateralTriangle.side: ")
+    var side:Int = scanner.nextInt()
+    myEquilateralTriangle.setDimensions(side.toDouble())
+
+    println("\n" + mySquare.name)
     mySquare.printDimensions()
-    println(mySquare.getArea())
+    println("Area: " + mySquare.getArea())
+
+    println("\n" + myCircle.name)
+    myCircle.printDimensions()
+    println("Area: " + myCircle.getArea())
+
+    println("\n" + myTriangle.name)
+    myTriangle.printDimensions()
+    println("Area: " + myTriangle.getArea())
+
+    println("\n" + myEquilateralTriangle.name)
+    myEquilateralTriangle.printDimensions()
+    println("Area: " + myEquilateralTriangle.getArea())
 }
